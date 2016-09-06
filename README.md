@@ -108,8 +108,11 @@ Headers have no actual constraints but if possible should increase consecutive t
 ~~~
 
 [external link](http://www.google.com)
+
 [header link](#markdown-cheatsheet)
+
 [intra link](/v1.3.12/help/test)
+
 [intra header link](/v1.3.12/help/test#code)
 
 #### Autolinks
