@@ -1,0 +1,6 @@
+.toc
+  ol.toc_list
+    - if @document
+      == get_toc(@document.body)
+    - else
+      == get_toc(@version.body)

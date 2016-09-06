@@ -1,0 +1,34 @@
+.side-nav {
+
+  .side-nav_section {
+    .side-nav_section-header {
+      padding:          $global-padding/2;
+      background-color: $primary-color;
+      border-radius:    $border-radius;
+      color:            white;
+      font-weight:      bold;
+    }
+
+    .side-nav_section-documents {
+      margin:      $global-padding 0;
+
+      .side-nav_section-documents-link {
+        display:      block;
+        padding: 0 0 0 $global-padding;
+        border-left: 1px solid $primary-color;
+
+        &:hover {
+          border-left: 4px solid $primary-color;
+        }
+
+        &:first-of-type {padding-top: 0;}
+        &:last-of-type {padding-bottom: 0;}
+      }
+    }
+
+    .side-nav_section-sub-sections {
+      margin-top:  $global-padding;
+      margin-left: $global-padding;
+    }
+  }
+}

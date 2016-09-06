@@ -1,0 +1,13 @@
+.markdown {
+  // ////
+  // CODE
+  // ////
+  .CodeRay {
+    .code {
+      background:    $light-gray;
+      padding:       $global-padding;
+      margin:        0 0 $global-padding 0;
+      border-radius: $border-radius;
+    }
+  }
+}

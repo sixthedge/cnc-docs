@@ -1,0 +1,25 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+    title == content_for?(:title) ? yield(:title) : "Totem Lodestar"
+
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tag
+
+  body
+
+    == render 'navigation/top_bar'
+
+    .row.medium-unstack
+      .medium-3.columns
+        == render 'navigation/side_bar'
+
+      .medium-6.columns
+        == yield
+
+      .medium-3.columns
+        == render 'navigation/table_of_contents'
