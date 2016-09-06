@@ -1,7 +1,4 @@
-# Totem Lodestar
-Lodestar contains a near out of the box rails 5 application with the intented purpose of building and sharing a repository of guide and technical documents.
-
-All documents are in markdown and rendered with [redcarpet](https://github.com/vmg/redcarpet). See below about using markdown for contributing or setting up a development environment.
+# CNC Documentation
 
 ## Installation
 - `bundle install`
