@@ -1,10 +1,30 @@
 language: ruby
+
 rvm:
  - 2.2.3
+
 cache: 
   bundler: true
+
 sudo: false
-install: 
-  - gem install rails
-  - bundle install
-  - rake db:drop db:create db:migrate
+
+env:
+  - DB=pgsql
+
+services:
+  - postgresql
+
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - psql -c 'create database totem-lodestar_test' -U postgres
+
+script:
+  - RAILS_ENV=test bundle exec rake db:migrate
+  - bundle exec rake db:test:prepare
+  - bundle exec rake
+
+
+# install: 
+#   - gem install rails
+#   - bundle install
+#   - rake db:drop db:create db:migrate
