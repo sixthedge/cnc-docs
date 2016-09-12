@@ -2,7 +2,7 @@ language: ruby
 rvm:
  - 2.2.3
 cache: 
-  - bundler
+  bundler: true
 sudo: false
 install: 
   - gem install rails
