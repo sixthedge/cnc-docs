@@ -5,6 +5,7 @@ namespace :documents do
   task generate: :environment do
     include Generator::Parser
     include Generator::Migrator
+    
     generate_document_hash
     migrate_document_structure
   end

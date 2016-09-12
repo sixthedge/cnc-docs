@@ -9,9 +9,3 @@
         
         .side-nav_section-sub-sections
           == render partial: 'navigation/side_bar/section', locals: {sections: section.sections}
-
-/ select#version-select
-/   - Version.all.each do |version|
-/     option value=version.title
-/       a href=version.slug
-/         == version.slug
