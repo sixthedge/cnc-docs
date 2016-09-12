@@ -2,6 +2,8 @@ language: ruby
 rvm:
  - 2.2.3
 cache: bundler
-install: gem install rails
+install: 
+  - gem install rails
+  - bundle install
 # uncomment and edit the following line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec
