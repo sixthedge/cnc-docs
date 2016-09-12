@@ -1,5 +1,7 @@
 
-[![Build Status](https://travis-ci.org/sixthedge/cnc-docs.svg?branch=master)](https://travis-ci.org/sixthedge/cnc-docs)# CNC Documentation
+[![Build Status](https://travis-ci.org/sixthedge/cnc-docs.svg?branch=master)](https://travis-ci.org/sixthedge/cnc-docs)
+
+# CNC Documentation
 
 ## Installation
 - `bundle install`
