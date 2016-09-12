@@ -3,6 +3,8 @@
 
 # CNC Documentation
 
+## Deployed!!
+
 ## Installation
 - `bundle install`
 - `rails db:drop db:create db:migrate`
