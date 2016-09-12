@@ -1,7 +1,9 @@
 language: ruby
 rvm:
  - 2.2.3
-cache: bundler
+cache: 
+  - bundler
+sudo: false
 install: 
   - gem install rails
   - bundle install
