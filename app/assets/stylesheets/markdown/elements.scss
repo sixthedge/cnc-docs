@@ -4,10 +4,25 @@
   // ////
   .CodeRay {
     .code {
-      background:    $light-gray;
-      padding:       $global-padding;
-      margin:        0 0 $global-padding 0;
-      border-radius: $border-radius;
+      background:    $md-codeblock_bg;
+      padding:       $md-codeblock_padding;
+      margin:        $md-codeblock_padding;
+      border-radius: $md-codeblock_radius;
+    }
+  }
+
+  blockquote {
+    border-radius: $md-blockquote_radius;
+    padding:       $md-blockquote_padding;
+    font-weight:   $md-blockquote_weight;
+    background:    $md-blockquote_bg;
+    border:        $md-blockquote_border;
+    border-left:   $md-blockquote_border-left;
+
+    p {
+      color: $md-blockquote_color;
+
+      &:first-of-type{margin-bottom: 0;}
     }
   }
 }

@@ -21,7 +21,9 @@ FOUNDATION
 /***
 GLOBAL
 ***/
-@import 'variables';
+@import 'variables/platform';
+@import 'variables/modules';
+
 
 /***
 SITE::MODULES

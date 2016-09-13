@@ -1,6 +1,6 @@
 .top-nav {
   width:            100%;
-  background-color: $primary-color;
+  background-color: $top-nav_bg;
   margin:           0 0 $global-padding 0;
 
   .top-nav_menu {
@@ -12,8 +12,8 @@
       padding:          $global-padding 0;
 
       a {
-        color:       white;
-        font-weight: bold;
+        color:       $top-nav_link-color;
+        font-weight: $top-nav_link-weight;
       }
     }      
   }
