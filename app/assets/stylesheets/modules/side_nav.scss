@@ -3,26 +3,30 @@
   .side-nav_section {
     .side-nav_section-header {
       padding:          $global-padding/2;
-      background-color: $primary-color;
       border-radius:    $border-radius;
-      color:            white;
-      font-weight:      bold;
+      background-color: $side-nav_header-bg;
+      color:            $side-nav_header-color;
+      font-weight:      $side-nav_header-weight;
     }
 
     .side-nav_section-documents {
-      margin:      $global-padding 0;
+      margin: $global-padding 0;
 
       .side-nav_section-documents-link {
-        display:      block;
-        padding: 0 0 0 $global-padding;
-        border-left: 1px solid $primary-color;
+        display:          block;
+        padding:          0 0 0 $global-padding;
+        margin-bottom:    $global-padding/2;
+        background-color: $side-nav_link-bg;
+        color:            $side-nav_link-color;
+        border-left:      $side-nav_link-border;
+
 
         &:hover {
-          border-left: 4px solid $primary-color;
+          border-left:      $side-nav_link-border-hover;
+          background-color: $side-nav_link-bg-hover;
         }
 
-        &:first-of-type {padding-top: 0;}
-        &:last-of-type {padding-bottom: 0;}
+        &:last-of-type {margin-bottom: 0;}
       }
     }
 

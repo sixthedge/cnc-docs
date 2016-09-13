@@ -1,0 +1,54 @@
+/****
+Global
+****/
+$border-radius: 3px;
+
+$primary-color:   $purple-400;
+$secondary-color: #DAA49A;
+$base-color:      #32292F;
+$white:           #F4FFF8;
+$black:           #000F08;
+
+/****
+Modules
+****/
+
+// Top Nav
+$top-nav_bg:          $primary-color;
+$top-nav_link-color:  white;
+$top-nav_link-weight: bold;
+
+// Side Nav
+$side-nav_header-bg:     $primary-color;
+$side-nav_header-color:  white;
+$side-nav_header-weight: bold;
+
+$side-nav_link-color:        $dark-gray;
+$side-nav_link-bg:           transparent;
+$side-nav_link-bg-hover:     transparent;
+$side-nav_link-border:       1px solid $primary-color;
+$side-nav_link-border-hover: 4px solid $primary-color;
+
+// Table Of Contents
+$toc_list-type:        none;
+$toc_list-link-color:  $dark-gray;
+$toc_list-link-weight: normal;
+
+/****
+Markdown
+****/
+
+// Code Blocks
+$md-codeblock_bg:      $light-gray;
+$md-codeblock_padding: $global-padding;
+$md-codeblock_margin:  0 0 $global-padding 0;
+$md-codeblock_radius:  $border-radius;
+
+// Block Quote
+$md-blockquote_radius:  $border-radius;
+$md-blockquote_padding: $global-padding;
+$md-blockquote_color:   white;
+$md-blockquote_bg:      $primary-color;
+$md-blockquote_weight:  normal;
+$md-blockquote_border:  2px solid darken($primary-color, 10%);
+$md-blockquote_border-left:  2px solid darken($primary-color, 10%);

@@ -1,0 +1,99 @@
+/////
+// TYPOGRAPHY
+/////
+$small-font: .875em;
+$base-font:  1em;
+$large-font: 1.25em;
+$thin:       300;
+$regular:    400;
+$medium:     500;
+$bold:       600;
+$heavy:      700;
+
+/////
+// COLORS
+/////
+$color-50:  40%;
+$color-100: 30%;
+$color-200: 20%;
+$color-300: 10%;
+$color-400: 0%;
+$color-500: 10%;
+$color-600: 20%;
+$color-700: 30%;
+$color-800: 40%;
+$color-900: 50%;
+
+$red:     #e05362;
+$red-50:  lighten($red, 36%);
+$red-100: lighten($red, $color-100);
+$red-200: lighten($red, $color-200);
+$red-300: lighten($red, $color-300);
+$red-400: $red;
+$red-500: darken($red, $color-500);
+$red-600: darken($red, $color-600);
+$red-700: darken($red, $color-700);
+$red-800: darken($red, $color-800);
+$red-900: darken($red, $color-900);
+
+$blue:     #597ac1;
+$blue-50:  lighten($blue, $color-50);
+$blue-100: lighten($blue, $color-100);
+$blue-200: lighten($blue, $color-200);
+$blue-300: lighten($blue, $color-300);
+$blue-400: $blue;
+$blue-500: darken($blue, $color-500);
+$blue-600: darken($blue, $color-600);
+$blue-700: darken($blue, $color-700);
+$blue-800: darken($blue, $color-800);
+$blue-900: darken($blue, $color-900);
+
+$green:      #75b988;
+$green-50:   lighten($green, $color-50);
+$green-100:  lighten($green, $color-100);
+$green-200:  lighten($green, $color-200);
+$green-300:  lighten($green, $color-300);
+$green-400:  $green;
+$green-500:  darken($green, $color-500);
+$green-600:  darken($green, $color-600);
+$green-700:  darken($green, $color-700);
+$green-800:  darken($green, $color-800);
+$green-900:  darken($green, $color-900);
+
+$purple:     #8b75b9;
+$purple-50:  lighten($purple, $color-50);
+$purple-100: lighten($purple, $color-100);
+$purple-200: lighten($purple, $color-200);
+$purple-300: lighten($purple, $color-300);
+$purple-400: $purple;
+$purple-500: darken($purple, $color-500);
+$purple-600: darken($purple, $color-600);
+$purple-700: darken($purple, $color-700);
+$purple-800: darken($purple, $color-800);
+$purple-900: darken($purple, $color-900);
+
+$orange:     #EFAA41;
+$orange-50:  lighten($orange, $color-50);
+$orange-100: lighten($orange, $color-100);
+$orange-200: lighten($orange, $color-200);
+$orange-300: lighten($orange, $color-300);
+$orange-400: $orange;
+$orange-500: darken($orange, $color-500);
+$orange-600: darken($orange, $color-600);
+$orange-700: darken($orange, $color-700);
+$orange-800: darken($orange, $color-800);
+$orange-900: darken($orange, $color-900);
+
+$gray:     #c7c7c7; 
+$gray-50:  lighten($gray, $color-50/2);
+$gray-100: lighten($gray, $color-100/2);
+$gray-200: lighten($gray, $color-200/2);
+$gray-300: lighten($gray, $color-300/2);
+$gray-400: $gray;
+$gray-500: darken($gray, $color-500);
+$gray-600: darken($gray, $color-600);
+$gray-700: darken($gray, $color-700);
+$gray-800: darken($gray, $color-800);
+$gray-900: darken($gray, $color-900);
+
+$black:   #363636;

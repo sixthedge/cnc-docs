@@ -4,17 +4,23 @@
   top:      -1px;
 
   ol.toc_list {
-    list-style-type: none;
+    list-style-type: $toc_list-type;
     width:           100%;
     
     li.toc_list-item {
-      $padding: 1em;
+      $padding-left: 1em;
+
+      a {
+        color:         $toc_list-link-color;
+        font-weight:   $toc_list-link-weight;    
+      }
+
       &.h1 {margin-left: 0;}
-      &.h2 {margin-left: $padding}
-      &.h3 {margin-left: $padding*2;}
-      &.h4 {margin-left: $padding*3;}
-      &.h5 {margin-left: $padding*4;}
-      &.h6 {margin-left: $padding*5;}
+      &.h2 {margin-left: $padding-left}
+      &.h3 {margin-left: $padding-left*2;}
+      &.h4 {margin-left: $padding-left*3;}
+      &.h5 {margin-left: $padding-left*4;}
+      &.h6 {margin-left: $padding-left*5;}
     }
   }
 }
