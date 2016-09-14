@@ -2,27 +2,35 @@
 
   .side-nav_section {
     .side-nav_section-header {
-      padding:          $global-padding/2;
-      border-radius:    $border-radius;
+      padding:          $side-nav_header-padding;
+      border-radius:    $side-nav_header-radius;
       background-color: $side-nav_header-bg;
       color:            $side-nav_header-color;
       font-weight:      $side-nav_header-weight;
+      font-size:        $side-nav_header-size;
+      text-transform:   $side-nav_header-text-transform;
+      letter-spacing:   $side-nav_header-letter-spacing;
     }
 
     .side-nav_section-documents {
-      margin: $global-padding 0;
+      margin: $side-nav_spacing;
 
       .side-nav_section-documents-link {
         display:          block;
-        padding:          0 0 0 $global-padding;
-        margin-bottom:    $global-padding/2;
+        padding:          $side-nav_link-padding;
+        margin-bottom:    $side-nav_link-spacing;
         background-color: $side-nav_link-bg;
         color:            $side-nav_link-color;
-        border-left:      $side-nav_link-border;
-
+        border:           $side-nav_link-border;
+        border-left:      $side-nav_link-border-left;
+        border-radius:    $side-nav_link-radius;
+        font-size:        $side-nav_link-size;
+        line-height:      $side-nav_link-line-height;
 
         &:hover {
+          border:           $side-nav_link-border-hover;
           border-left:      $side-nav_link-border-hover;
+          color:            $side-nav_link-color-hover;
           background-color: $side-nav_link-bg-hover;
         }
 
@@ -31,8 +39,8 @@
     }
 
     .side-nav_section-sub-sections {
-      margin-top:  $global-padding;
-      margin-left: $global-padding;
+      margin-top:  $padding;
+      margin-left: $padding;
     }
   }
 }
