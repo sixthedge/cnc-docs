@@ -1,6 +1,6 @@
-/////
-// TYPOGRAPHY
-/////
+/****
+Typography
+****/
 $small-font: .875em;
 $base-font:  1em;
 $large-font: 1.25em;
@@ -10,9 +10,20 @@ $medium:     500;
 $bold:       600;
 $heavy:      700;
 
-/////
-// COLORS
-/////
+/****
+Layout
+****/
+$padding: $global-padding;
+
+
+/****
+Modules
+****/
+$border-radius: 3px;
+
+/****
+Colors
+****/
 $color-50:  40%;
 $color-100: 30%;
 $color-200: 20%;
@@ -96,4 +107,11 @@ $gray-700: darken($gray, $color-700);
 $gray-800: darken($gray, $color-800);
 $gray-900: darken($gray, $color-900);
 
-$black:   #363636;
+$black: #363636;
+$white: #F4FFF8;
+
+$primary-color:   $purple-400;
+$secondary-color: $blue-400;
+$warning-color:   $red-400;
+$sucsess-color:   $green-400;
+$highlight-color: $orange-400;

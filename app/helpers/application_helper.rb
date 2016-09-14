@@ -55,4 +55,8 @@ module ApplicationHelper
       string
     end
   end
+
+  def platform_title
+    Rails.configuration.platform['title']
+  end
 end

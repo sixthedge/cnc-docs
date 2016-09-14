@@ -1,7 +1,8 @@
 .top-nav {
   width:            100%;
   background-color: $top-nav_bg;
-  margin:           0 0 $global-padding 0;
+  border-bottom:    $top-nav_border-bottom;
+  margin-bottom:    $top-nav_spacing;
 
   .top-nav_menu {
     @include flex-grid-row();
@@ -9,7 +10,7 @@
     .top-nav_menu-links {
       @include flex-grid-column($columns: 12);
 
-      padding:          $global-padding 0;
+      padding:          $padding 0;
 
       a {
         color:       $top-nav_link-color;
