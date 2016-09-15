@@ -1,4 +1,9 @@
 .top-nav
   .top-nav_menu
-    .top-nav_menu-links
-      = link_to platform_title, "/"
+      .top-nav_menu-logo
+        a href='/'
+          img src=image_url("logo.png") width="64"
+      .top-nav_menu-title
+        = get_platform_config('title')
+        .sub-title
+          = get_platform_config('sub-title')

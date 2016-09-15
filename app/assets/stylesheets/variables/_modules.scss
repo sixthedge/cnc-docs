@@ -13,8 +13,13 @@ $top-nav_bg:            $gray-100;
 $top-nav_border-bottom: 1px solid $gray-200;
 $top-nav_spacing:       $padding;
 
-$top-nav_link-color:    $black;
-$top-nav_link-weight:   $bold;
+$top-nav_title-color:  $black;
+$top-nav_title-weight: $bold;
+$top-nav_title-size:   $large-font;
+
+$top-nav_sub-title-color:  $gray-600;
+$top-nav_sub-title-weight: $thin;
+$top-nav_sub-title-size:   .75em;
 /****
 Side Nav
 ****/
