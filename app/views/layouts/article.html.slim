@@ -15,11 +15,11 @@ html lang="en"
     == render 'navigation/top_nav'
 
     .row.medium-unstack
-      .medium-3.columns
+      .medium-3.column.small-order-1.medium-order-1
         == render 'navigation/side_nav'
 
-      .medium-6.columns
+      .medium-6.column.small-order-3.medium-order-2
         == yield
 
-      .medium-3.columns
+      .medium-3.column.small-order-2.medium-order-3
         == render 'navigation/table_of_contents'

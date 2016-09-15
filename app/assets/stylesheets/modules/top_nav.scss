@@ -6,16 +6,30 @@
 
   .top-nav_menu {
     @include flex-grid-row();
+    padding: $padding 0;
 
-    .top-nav_menu-links {
-      @include flex-grid-column($columns: 12);
-
-      padding:          $padding 0;
+    .top-nav_menu-logo {
+      display:      inline-block;
+      margin-right: $padding;
 
       a {
-        color:       $top-nav_link-color;
-        font-weight: $top-nav_link-weight;
+        img {
+          height: auto;
+        }
       }
-    }      
+
+    }
+    .top-nav_menu-title {
+      display:     inline-block;
+      color:       $top-nav_title-color;
+      font-weight: $top-nav_title-weight;
+      font-size:   $top-nav_title-size;
+
+      .sub-title {
+        color:       $top-nav_sub-title-color;
+        font-weight: $top-nav_sub-title-weight;
+        font-size:   $top-nav_sub-title-size;
+      }
+    }  
   }
 }

@@ -3,9 +3,10 @@ class Version < ApplicationRecord
 
   extend FriendlyId
   friendly_id :title, use: [:slugged]
+
   ## Override FriendlyId::Slugged to use '.' instead of '-'
   def normalize_friendly_id(string)
-    slug = "v" + string.upcase.gsub("-", ".")
+    slug = string.upcase.gsub("-", ".")
   end
 
   def base_sections
