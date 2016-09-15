@@ -59,4 +59,9 @@ module ApplicationHelper
   def platform_title
     Rails.configuration.platform['title']
   end
+
+  def current_class?(link_path)
+    if request.path == link_path then return 'active' else return '' end
+  end
+
 end

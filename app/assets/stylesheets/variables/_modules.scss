@@ -45,6 +45,16 @@ $side-nav_link-border-hover:      none;
 $side-nav_link-border-left-hover: none;
 $side-nav_link-color-hover:       $black;
 
+$side-nav_link-bg-active:     $blue-400;
+$side-nav_link-border-active: none;
+$side-nav_border-left-active: none;
+$side-nav_link-color-active:  $white;
+
+$side-nav_link-bg-active-hover:     $blue-500;
+$side-nav_link-border-active-hover: none;
+$side-nav_border-left-active-hover: none;
+$side-nav_link-color-active-hover:  $white;
+
 /****
 Table of Contents
 ****/
@@ -52,8 +62,8 @@ $toc_list-type:             none;
 $toc_list-link-bg:          transparent;
 $toc_list-link-indent-base: 1em; // multiplied by header level - 1 | ex: h3 = base*2
 $toc_list-link-padding:     $padding/2 $padding;
-$toc_list-link-color:       $black;
-$toc_list-link-weight:      $regular;
+$toc_list-link-color:       $gray-700;
+$toc_list-link-weight:      $bold;
 $toc_list-link-line-height: 1.6;
 $toc_list-link-size:        $small-font;
 $toc_list-link-radius:      $border-radius;
