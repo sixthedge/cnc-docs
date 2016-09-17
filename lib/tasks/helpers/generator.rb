@@ -24,7 +24,7 @@ module Generator
     end
 
     ## Called by the rake task
-    def generate_document_hash
+    def generate_document_structure
       initialize_base_hash
       build_versions_data
     end
