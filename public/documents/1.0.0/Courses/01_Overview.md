@@ -5,10 +5,10 @@ Courses exist in a number of formats. They can be hosted as a cross-Network cour
 
 For a more detailed look at how to use courses please check out the following:
 
-- [Finding Courses](/v1.0.0/courses/finding-courses)
-- [Creating Courses](/v1.0.0/courses/creating-courses)
-- [Administering Courses](/v1.0.0/courses/administering-courses)
-- [Managing Courses](/v1.0.0/courses/managing-courses)
+- [Finding Courses](/1.0.0/courses/finding-courses)
+- [Creating Courses](/1.0.0/courses/creating-courses)
+- [Administering Courses](/1.0.0/courses/administering-courses)
+- [Managing Courses](/1.0.0/courses/managing-courses)
 - References
-  - [Course States](/v1.0.0/references/course-states)
+  - [Course States](/1.0.0/references/course-states)
 
