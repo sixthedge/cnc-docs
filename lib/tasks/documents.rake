@@ -8,10 +8,9 @@ namespace :documents do
     migrate_document_structure
   end
 
-  namespace :versions do
-    task remove_v_slug: :environment do
-      Version.all.each { |version| version.slug = version.slug.gsub(/v/, '') }
-    end
+  desc "Sets all slugs to nil to regenerate"
+  task reset_slugs: :environment do
+    [Version, Section, Document].each {|klass| klass.all.each {|record| record.slug = nil; record.save}}
   end
 end
 
