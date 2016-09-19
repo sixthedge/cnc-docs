@@ -6,7 +6,7 @@
 
 ## May need to use an OMAP see yaml.org/type/omap.html
 
-one:
+v1_s1_d1:
   id:         1
   title:      Test Doc 1
   slug:       test-doc-1
@@ -15,7 +15,7 @@ one:
   body:       '#Test Body'
 
 
-two:
+v1_s1_d2:
   id:         2
   title:      Test Doc 2
   slug:       test-doc-1

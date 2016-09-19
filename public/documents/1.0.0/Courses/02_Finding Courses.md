@@ -1,4 +1,4 @@
-# Finding Courses in the CIRTL Network
+# Finding Courses in the CIRTL Network 1
 If you are member wanting to browse the potential courses that are hosted in the CIRTL Network, or to find courses you are already involved in, begin by selecting the 'Courses' in the main navigation menu.
 
 Once you have reached the 'Courses' section, there are a few places to begin looking for the course you want.

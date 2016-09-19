@@ -4,13 +4,13 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one:
+v1_s1:
   id:         1
   title:      Section 1
   slug:       section-1
   version_id: 1
 
-two:
+v1_s2:
   id:         2
   title:      Section 2
   slug:       section-1

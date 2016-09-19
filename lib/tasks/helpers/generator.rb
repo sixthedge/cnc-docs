@@ -1,15 +1,13 @@
-require 'pp'
-
 module Generator
   module Parser
     DOCUMENTS_DIR = '/public/documents'
 
-    ## Documents Hash
+    ## doc_hash
     ## {
     ##   '0.1.0': {
     ##     'files':[{file}, ...], 
     ##     'sections':[{section}, ...]},
-    ##   '0.2.0': { ... }
+    ##   '0.2.0': { ... },
     ##   ...
     ## }
     attr_accessor :doc_hash
@@ -24,27 +22,20 @@ module Generator
     end
 
     ## Called by the rake task
-    def generate_document_structure
-      initialize_base_hash
-      build_versions_data
-    end
+    def generate_document_structure; build_document_hash end
 
     private
-
-    ## Creates the version keys for the document hash
-    def initialize_base_hash
+    def build_document_hash
+      ## Generate the base version keys for the doc_hash
       Dir.glob("*.*.*").each {|version| Generator::Parser::doc_hash[version] = {};}
-    end
-
-    ## Recursively generates the document structure for each version folder
-    def build_versions_data
+      ## Recursively generates the document structure for each version folder
       Generator::Parser::doc_hash.each {|version, base| add_files_and_sections(base, version);} 
     end
 
     ## Sets the files and sections keys for a given hash
     def add_files_and_sections(hash, cur_dir)
       files, dirs      = scrape_dir(cur_dir)
-      hash['files']    = build_files_array(files, cur_dir) unless files.empty?
+      hash['files']    = build_files_array(files, cur_dir)   unless files.empty?
       hash['sections'] = build_sections_array(dirs, cur_dir) unless dirs.empty?
       hash
     end
@@ -53,27 +44,23 @@ module Generator
     def scrape_dir(dir)
       files, dirs = ''
       change_to(dir) do
-        files = Dir.glob("*.*") ## ["test.md", "test2.md"]
-        dirs  = Dir.glob("*")   ## ["Deploy", "Help", "test.md"]
+        files = Dir.glob("*.*")                    ## ["test.md", "test2.md"]
+        dirs  = Dir.glob("*")                      ## ["Deploy", "Help", "test.md"]
         dirs.delete_if {|dir| files.include?(dir)} ## ["Deploy", "Help"]
       end
       return files, dirs
     end
 
     def build_sections_array(sections, cur)
-      arr = []
-      Dir.chdir(cur)
-      sections.each do |section|
-        arr.push(create_section_object(section))
+      build_array do |arr|
+        change_to(cur) do
+          sections.each {|section| arr.push(create_section_object(section))}
+        end
       end
-      Dir.chdir('..')
-      arr
     end
 
     def build_files_array(files, dir)
-      arr = []
-      files.each {|file| arr.push(create_document_object(file, dir))}
-      arr
+      build_array {|arr| files.each {|file| arr.push(create_document_object(file, dir))}}
     end
 
     def create_document_object(file, dir)
@@ -85,6 +72,12 @@ module Generator
     def create_section_object(dir)
       section = {title: dir}
       section = add_files_and_sections(section, dir)
+    end
+
+    def build_array
+      arr = []
+      yield(arr)
+      arr
     end
 
     def change_to(dir, back=true)
