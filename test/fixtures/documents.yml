@@ -7,18 +7,18 @@
 ## May need to use an OMAP see yaml.org/type/omap.html
 
 one:
-  id: 1
-  title: Test Doc 1
-  slug: test-doc-1
+  id:         1
+  title:      Test Doc 1
+  slug:       test-doc-1
   section_id: 1
   version_id: 1
-  body: '#Test Body'
+  body:       '#Test Body'
 
 
 two:
-  id: 2
-  title: Test Doc 2
-  slug: test-doc-1
+  id:         2
+  title:      Test Doc 2
+  slug:       test-doc-1
   section_id: 1
   version_id: 1
-  body: '#Test Body'
+  body:       '#Test Body'

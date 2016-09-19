@@ -5,13 +5,13 @@
 # below each fixture, per the syntax in the comments below
 #
 one:
-  id: 1
-  title: Section 1
-  slug: section-1
+  id:         1
+  title:      Section 1
+  slug:       section-1
   version_id: 1
 
 two:
-  id: 2
-  title: Section 2
-  slug: section-1
+  id:         2
+  title:      Section 2
+  slug:       section-1
   version_id: 1
