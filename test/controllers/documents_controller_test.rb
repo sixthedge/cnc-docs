@@ -2,11 +2,13 @@ require 'test_helper'
 
 class DocumentsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @document = documents(:one)
+    @all_document_fixtures = documents(:v1_s1_d1, :v1_s1_d2)
   end
 
   test "documents show" do
-    get document_url(@document.version_id, @document.section_id, @document)
-    assert_response :success
+    @all_document_fixtures.each do |document|
+      get document_url(document.version_id, document.section_id, document)
+      assert_response :success
+    end
   end
 end
