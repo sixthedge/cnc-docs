@@ -56,7 +56,7 @@ module Generator
         change_to(cur) do
           sections.each {|section| arr.push(create_section_object(section))}
         end
-      endexi
+      end
     end
 
     def build_files_array(files, dir)
