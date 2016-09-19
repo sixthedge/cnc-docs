@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   ## site/v0.1.0/foo --> site/v0.1.0
   get '/*version_id/:section_id',              to: redirect('/%{version_id}')
   ## site/v0.1.0
-  get '/*version_id',                          to: 'versions#show', format: false
+  get '/*version_id',                          to: 'versions#show', format: false, as: 'version'
 end

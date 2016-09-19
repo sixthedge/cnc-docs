@@ -5,9 +5,8 @@ class DocumentsControllerTest < ActionDispatch::IntegrationTest
     @document = documents(:one)
   end
 
-  test "should show document" do
+  test "documents show" do
     get document_url(@document.version_id, @document.section_id, @document)
     assert_response :success
   end
-
 end
