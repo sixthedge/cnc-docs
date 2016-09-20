@@ -81,7 +81,7 @@ module Generator
     attr_accessor :previous_versions, :previous_sections, :previous_documents
 
     def self.included(base)
-      ::migrated_versions  = []
+      Generator::Migrator::migrated_versions  = []
       Generator::Migrator::migrated_sections  = []
       Generator::Migrator::migrated_documents = []
 
