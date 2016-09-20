@@ -94,6 +94,8 @@ module Generator
     def add_section(section);   Generator::Migrator::migrated_sections.push(section);   section  end
     def add_document(document); Generator::Migrator::migrated_documents.push(document); document end
 
+    ## Take document structure from the parser and get or create db records for them, then remove any
+    ## documents that were not parsed to remove any deleted version/sections/documents.
     def migrate_document_structure
       set_previous_migrations
 
@@ -114,7 +116,6 @@ module Generator
       Generator::Migrator::previous_documents = Document.all
     end
 
-    ## TODO: Need more robust checking if a depenecy is removed to remove self
     def destroy_removed_migrations
       versions_to_remove = Generator::Migrator::previous_versions.to_a.keep_if do |version|
         !Generator::Migrator::migrated_versions.include?(version)
@@ -131,18 +132,15 @@ module Generator
       [versions_to_remove, sections_to_remove, documents_to_remove].each {|records| records.each {|record| record.destroy}}
     end
 
+    ## Check the version hash for an index.md or return default text
     def get_version_index_text(data, version)
-      if data
-        data.each do |file|
-          if file[:title] == "index.md"
-            return File.read(file[:path])
-          else
-            return "##{version}\n No Index Found.\n To contribute add an index.md in the base directory of this version!"
-          end
-        end
-      else
-        return "##{version}\n No Index Found.\n To contribute add an index.md in the base directory of this version!"
-      end
+      index = 
+        "
+        # #{version}
+        No Index Found.
+        To contribute add an index.md to the base directory of this version!
+        "
+      if data and data.select {|file| file[:title] == 'index.md'} then index = File.read(data[0][:path]) end
     end
 
     def migrate_sections(sections, version, parent=nil)
@@ -162,19 +160,6 @@ module Generator
         document[:version_id] = version.id
         get_or_create_document(document)
       end      
-    end
-
-    def set_order_from_title(title)
-      match = /^[0-9]?[0-9]_/.match(title)
-      if match
-        order = match.to_s.to_i
-        title.gsub!(/^[0-9]?[0-9]_/, '')
-      end
-      if order 
-        return order 
-      else 
-        return nil 
-      end
     end
 
     def get_or_create_document(document)
@@ -201,6 +186,19 @@ module Generator
       section.order  = order if order
       section.save
       add_section(section)
+    end
+  end
+
+  def set_order_from_title(title)
+    match = /^[0-9]?[0-9]_/.match(title)
+    if match
+      order = match.to_s.to_i
+      title.gsub!(/^[0-9]?[0-9]_/, '')
+    end
+    if order 
+      return order 
+    else 
+      return nil 
     end
   end
 end
