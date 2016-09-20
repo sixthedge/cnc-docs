@@ -2,18 +2,7 @@ module Generator
   module Parser
     DOCUMENTS_DIR = '/public/documents'
 
-    ## doc_hash
-    ## {
-    ##   '0.1.0': {
-    ##     'files':[{file}, ...], 
-    ##     'sections':[{section}, ...]},
-    ##   '0.2.0': { ... },
-    ##   ...
-    ## }
     attr_accessor :doc_hash
-
-    ## section {title: str, files: [{file}, ...], sections: [{section}, ...]}
-    ## file    {title: str, path: str}
 
     ## Initializes module attributes when included in the rake task
     def self.included(base)
@@ -29,14 +18,14 @@ module Generator
       ## Generate the base version keys for the doc_hash
       Dir.glob("*.*.*").each {|version| Generator::Parser::doc_hash[version] = {};}
       ## Recursively generates the document structure for each version folder
-      Generator::Parser::doc_hash.each {|version, base| add_files_and_sections(base, version);} 
+      Generator::Parser::doc_hash.each {|version, hash| add_files_and_sections(version, hash);} 
     end
 
     ## Sets the files and sections keys for a given hash
-    def add_files_and_sections(hash, cur_dir)
-      files, dirs      = scrape_dir(cur_dir)
-      hash['files']    = build_files_array(files, cur_dir)   unless files.empty?
-      hash['sections'] = build_sections_array(dirs, cur_dir) unless dirs.empty?
+    def add_files_and_sections(dir, hash)
+      files, dirs      = scrape_dir(dir)
+      hash['files']    = build_files_array(files, dir)   unless files.empty?
+      hash['sections'] = build_sections_array(dirs, dir) unless dirs.empty?
       hash
     end
 
@@ -71,7 +60,7 @@ module Generator
 
     def create_section_object(dir)
       section = {title: dir}
-      section = add_files_and_sections(section, dir)
+      section = add_files_and_sections(dir, section)
     end
 
     def build_array
