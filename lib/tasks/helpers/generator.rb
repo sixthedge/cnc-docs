@@ -187,18 +187,15 @@ module Generator
       section.save
       add_section(section)
     end
-  end
 
-  def set_order_from_title(title)
-    match = /^[0-9]?[0-9]_/.match(title)
-    if match
-      order = match.to_s.to_i
-      title.gsub!(/^[0-9]?[0-9]_/, '')
+    def set_order_from_title(title)
+      has_order = /^[0-9]?[0-9]_/.match(title)
+      if has_order
+        order = has_order.to_s.to_i
+        title.gsub!(/^[0-9]?[0-9]_/, '')
+        return order
+      end
     end
-    if order 
-      return order 
-    else 
-      return nil 
-    end
+
   end
 end

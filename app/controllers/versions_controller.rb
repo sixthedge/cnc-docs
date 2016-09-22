@@ -7,6 +7,10 @@ class VersionsController < ApplicationController
   end
 
   def index
+    if Settings.modules.version_redirect
+      redirect_to action: "show", version_id: Version.last.slug
+    end
+    
     @versions = Version.all
   end
 

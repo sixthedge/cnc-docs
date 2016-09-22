@@ -56,8 +56,8 @@ module ApplicationHelper
     end
   end
 
-  def get_platform_config(var)
-    Rails.configuration.platform[var]
+  def get_settings_text(var)
+    Settings[:text][var]
   end
 
   def current_class?(link_path)
