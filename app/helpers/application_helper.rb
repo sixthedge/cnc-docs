@@ -46,11 +46,9 @@ module ApplicationHelper
 
       string = ""
       header_objects.each do |header|
-        string += "<li class='toc_list-item h#{header[:level]}'>"
-        string += "<a href=##{header[:title].parameterize}>"
+        string += "<a href=##{header[:title].parameterize} class='toc_list-item h#{header[:level]}'>"
         string += header[:title]
         string += "</a>"
-        string += "</li>"
       end
       string
     end

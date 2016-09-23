@@ -1,24 +1,22 @@
-
 .toc {
   position: sticky;
   position: -webkit-sticky;
   top:      -1px;
 
-  ol.toc_list {
+  .toc_list {
     list-style-type: $toc_list-type;
     width:           100%;
     
-    li.toc_list-item {
+    a.toc_list-item {
       padding:          $toc_list-link-padding;
       background-color: $toc_list-link-bg;
       border-radius:    $toc_list-link-radius;
+      color:            $toc_list-link-color;
+      font-weight:      $toc_list-link-weight;    
+      line-height:      $toc_list-link-line-height;
+      font-size:        $toc_list-link-size;
 
-      a {
-        color:         $toc_list-link-color;
-        font-weight:   $toc_list-link-weight;    
-        line-height:   $toc_list-link-line-height;
-        font-size:     $toc_list-link-size;
-      }
+      display: block;
 
       &:hover {
         background-color: $toc_list-link-bg-hover;
