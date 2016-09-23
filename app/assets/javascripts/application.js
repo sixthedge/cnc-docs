@@ -19,21 +19,7 @@
 var ready;
 ready = function() {
   $(document).foundation();
-
-  // Enable intra-document link smooth scrolling
-  $('a[href^="#"]').on('click',function (e) {
-    e.preventDefault();
-
-    var target = this.hash;
-    var $target = $(target);
-
-    $('html, body').stop().animate({
-        'scrollTop': $target.offset().top
-    }, 250, 'swing', function () {
-        window.location.hash = target;
-    });
-  });
-
+  enable_smooth_scrolling();
 };
 
 $(document).ready(ready);
