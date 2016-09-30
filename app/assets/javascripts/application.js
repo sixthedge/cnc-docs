@@ -14,13 +14,8 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require totem/lodestar/application
 //= require_tree .
+//= require_self
 
-var ready;
-ready = function() {
-  $(document).foundation();
-  enable_smooth_scrolling();
-};
 
-$(document).ready(ready);
-$(document).on('turbolinks:load', ready);

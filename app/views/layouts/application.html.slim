@@ -3,17 +3,14 @@ html lang="en"
   head
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
-    title == content_for?(:title) ? yield(:title) : "CNC Documentation"
+
+    title == content_for?(:title) ? yield(:title) : "CNC Docs"
 
     = stylesheet_link_tag "application"
     = javascript_include_tag "application", "data-turbolinks-track" => true
     script src='https://use.typekit.net/dwi0agl.js'
     script type='text/javascript' try{Typekit.load({});}catch(e){}
-
     = csrf_meta_tag
 
   body
-    == render 'navigation/top_nav'
-    .row
-      .small-12.columns
-        == yield
+    == yield
