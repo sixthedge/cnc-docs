@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
-//= require totem/lodestar/application
+//= require totem-lodestar
 //= require_tree .
 //= require_self
 

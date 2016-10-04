@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class SectionsControllerTest < ActionDispatch::IntegrationTest
-  setup { @section_fixtures = sections(:v1_s1, :v1_s2) }
+  setup { @section_fixtures = totem_lodestar_sections(:v1_s1, :v1_s2) }
 
   test "versions show" do
     @section_fixtures.each do |section|

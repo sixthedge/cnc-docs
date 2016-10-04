@@ -12,22 +12,7 @@
 *= require_self
 */
 
-
-
-/***
-FOUNDATION
-***/
-@import 'foundation_and_overrides';
-@import 'settings';
-
-/***
-GLOBAL
-***/
 @import 'variables/platform';
-@import 'variables/modules';
-@import 'base';
 
-/***
-MODULES
-***/
-@import 'modules/*';
+@import 'variables/modules';
+@import 'totem-lodestar';

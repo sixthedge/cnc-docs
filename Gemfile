@@ -22,20 +22,6 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Foundation as a base for styling
-
-gem 'foundation-rails'
-# Config to setup custom app config files
-gem 'config'
-# Use Redcarpet for markdown rendering
-gem 'redcarpet'
-# Use nokogiri for parsing the markdown for table of contents
-gem 'nokogiri'
-# Use Coderay for syntax hilighting within Redcarpet rendering
-gem 'coderay'
-# Use FriendlyId to set the slug of documents
-gem 'friendly_id'
-# Use Slim for template markup
-gem 'slim'
 gem 'totem-lodestar', path: '../totem-lodestar'
 
 # Use Redis adapter to run Action Cable in production

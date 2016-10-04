@@ -1,12 +1,13 @@
 PATH
   remote: ../totem-lodestar
   specs:
-    totem-lodestar (0.1.0)
+    totem-lodestar (0.2.0)
       coderay
       config
       foundation-rails
       friendly_id
       nokogiri
+      pg (~> 0.18)
       rails (~> 5.0.0)
       redcarpet
       slim
@@ -198,22 +199,15 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  coderay
   coffee-rails (~> 4.2)
-  config
-  foundation-rails
-  friendly_id
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
-  nokogiri
   pg (~> 0.18)
   puma (~> 3.0)
   rails (~> 5.0.0)
   rake
-  redcarpet
   sass-rails (~> 5.0)
-  slim
   spring
   spring-watcher-listen (~> 2.0.0)
   therubyracer

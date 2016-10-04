@@ -25,4 +25,4 @@ deploy:
   on: master
   run:
   - rails db:migrate
-  - rails documents:generate
+  - rails totem:lodestar:documents:generate
