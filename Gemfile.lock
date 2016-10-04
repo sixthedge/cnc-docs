@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/rootwizzy/totem-lodestar
-  revision: f19ac278ad3d225d9d58b4db8d11f404e3311f5c
+  revision: cff11eb74a4e580e6d42ad29c31d55d5f6e59e66
   specs:
-    totem-lodestar (0.2.0)
+    totem-lodestar (0.2.1)
       coderay
       config
       foundation-rails
@@ -109,11 +109,9 @@ GEM
     minitest (5.9.1)
     multi_json (1.12.1)
     nio4r (1.2.1)
-    nokogiri (1.6.8)
+    nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
     pg (0.19.0)
-    pkg-config (1.1.7)
     puma (3.6.0)
     rack (2.0.1)
     rack-test (0.6.3)
