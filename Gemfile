@@ -22,7 +22,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Foundation as a base for styling
-gem 'totem-lodestar', path: '../totem-lodestar'
+gem 'totem-lodestar', git: 'https://github.com/rootwizzy/totem-lodestar'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
