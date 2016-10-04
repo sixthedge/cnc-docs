@@ -1,5 +1,6 @@
-PATH
-  remote: ../totem-lodestar
+GIT
+  remote: https://github.com/rootwizzy/totem-lodestar
+  revision: f19ac278ad3d225d9d58b4db8d11f404e3311f5c
   specs:
     totem-lodestar (0.2.0)
       coderay
