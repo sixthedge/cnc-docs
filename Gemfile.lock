@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/rootwizzy/totem-lodestar
-  revision: 8a5d97468f188a95c6ea5a39524b1f3028eca182
+  revision: 9f003ebc355406904774d54d227af4b6af43a77c
   specs:
-    totem-lodestar (0.2.1)
+    totem-lodestar (0.3.0)
       coderay
       config
       foundation-rails
