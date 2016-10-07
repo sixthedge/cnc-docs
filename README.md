@@ -1,33 +1,10 @@
 
 [![Build Status](https://travis-ci.org/sixthedge/cnc-docs.svg?branch=master)](https://travis-ci.org/sixthedge/cnc-docs)
 
-# CNC Documentation
-
-## Installation
-- `bundle install`
-- `rails db:drop db:create db:migrate`
-
-## Setup
-- Create documents folder
-  - `app/public/documents`
-- Create documents version (required)
-  - `app/public/documents/x.y.z`
-- Add base sections to the version (required)
-  - `app/public/documents/x.y.z/foo`
-  - sections can be nested within sections as well
-- Add markdown documents to sections
-  - `app/public/documents/x.y.z/foo/bar.md`
-  - required .md extension on the file
-- Migrate files to the database
-  - `rails documents:generate`
-  - run this command after any update to the documents
-- Start server
-  - `rails s [--bind -p]`
+# CIRTL Network Commons Documentation
 
 ## Markdown Cheatsheet
-
 ### Text
-
 #### Paragraphs
 One or more lines seperated by line breaks.
 
@@ -135,9 +112,9 @@ Headers have no actual constraints but if possible should increase consecutive t
 inline `code` or `commands`
 ~~~
 
-wrapping in back-ticks highlight `code` or `commands`
+inline `code` or `commands`
 #### Blocks
-To invoke a code block using 3 tildes `~` or backticks ` ` ` followed by a code language for highlighting
+To invoke a code block using 3 tildes `~` or backticks ` `` followed by a code language for highlighting
 
 ### Horizontal Rules
 ~~~html
