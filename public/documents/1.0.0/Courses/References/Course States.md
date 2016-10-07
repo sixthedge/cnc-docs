@@ -9,7 +9,6 @@
 
 ### Approval States
 Approval states are associated with the approval process for courses, going from a drafted proposal all the way to a published course within the system.
-![Cross Network Approval States](references/courses/CrossNetworkApproval.png)
 
 #### Drafting
 > Drafting is the initial state of a newly created course proposal. The purpose of this state is to allow admins to begin the creation process and return at any point in case information is not yet available to submit for review.
