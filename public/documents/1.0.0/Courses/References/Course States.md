@@ -1,221 +1,86 @@
+# Course States
+
 ## Cross Network
 
-##### Approval States
-- [Drafting](#drafting)
-- [Pending](#pending)
-- [Approved](#approved)
-- [Rejected](#rejected)
-- [Reviewing](#reviewing)
-- [Revision Pending](#revision-pending)
-- [Completed](#completed)
-- [Published](#published)
+[comment]: # (Approval State Template)
+[comment]: # (- Who can see the course in this state?)
+[comment]: # (- Where is this course displayed while in this state?)
+[comment]: # (- What Transistions can a course in this state make?))
 
-##### Record States
-- [Cancelled](#cancelled)
-- [Deleted](#deleted)
-
-##### Appendices
-- Figure 1 - [Approval States Diagram](#figure-1)
-- Figure 2 - [Record States Diagram](#figure-2)
-
----
-[Approval States Diagram](#figure-1)
+### Approval States
+Approval states are associated with the approval process for courses, going from a drafted proposal all the way to a published course within the system.
 ![Cross Network Approval States](references/courses/CrossNetworkApproval.png)
 
-### Drafting
-> Drafting is the initial state that a course is set to when you create a course. This allows you to create a course without knowing all of the required information before creating a course. While in a draft state, only the course administrators will be able to see the course.
+#### Drafting
+> Drafting is the initial state of a newly created course proposal. The purpose of this state is to allow admins to begin the creation process and return at any point in case information is not yet available to submit for review.
 
-##### Visible To
-Drafting courses can be seen only by the Course administrators. The course does not appear to CIRTL Central or any other members.
+Drafting proposals can be seen only by the Course admins in `My Courses`. 
+Once the proposal is ready to be submitted it will be set to [Pending](#pending).
 
-##### Location
-A course in the draft state will appear only under the My Courses page, and clicking the link will take you to the wizard to continue the creation process.
+#### Pending
+> Pending proposals have all the required fields present and valid and are are awaiting action from CIRTL Central.
 
-##### Transitions
-- **To >>** [Pending](#pending): After all validations are passed and the proposal is submitted.
+Pending courses can be seen by the course admins in `My Courses > Created`
+Pending proposals can be seen by CIRTL Central in `Course Admin > Propsed`
 
-##### Wizard 
-- **Steps Unlocked**: Details, Outcomes, Assessment, Confirmation
-- **Steps Locked**: Logistics
+CIRTL Central will review pending proposals and set them to [Approved](#approved), [Reviewing](#reviewing) or [Rejected](#rejected)
 
-### Pending
-> Pending courses have all the required fields present for a valid proposal. They are awaiting action from an authority (CIRTL Central for cross-Network courses, institutional leaders for Local courses).
+#### Approved
+> Approved propasals have been reviewed and accepted by CIRTL Central and are ready to be completed by the course admins so the course can be published.
 
-##### Visible To
-Pending courses can be seen by the course administrators as well as CIRTL Central.
+Approved proposals can be seen by the course administrators in the 'My Courses > Created' section. When a course proposal is approved the 'Logisitics' step is unlocked in the creation/edit wizard. This step is where you will set the start and end times of the course and meetings. Upon submitting your logisitics the course will become [Completed](#completed).
 
-##### Location
-- **Course Admin:** My Courses > Created
-- **CIRTL Central:** Course Admin > Proposed
 
+#### Reviewing
+> Proposals in the reviewing state have been flagged for adjustments in accordance with CIRTL Central requirements. Optionally, CIRTL Central can leave feedback for guidance in ammending the proposal.
 
-##### Transitions
-- **To >>** [Approved](#approved):  CIRTL Central action from the Course Review page.
-- **To >>** [Reviewing](#reviewing): CIRTL Central action from the Course Review page.
-- **To >>** [Rejected](#rejected):  CIRTL Central action from the Course Review page.
+Reviewing proposals can be seen by their course admins in `My Courses > Created`
 
-- **From <<** [Drafting](#drafting): After submission of the initial proposal.
+After addressing any outstanding issues with your proposal submitting will send it to [Revision Pending](#revision-pending)
 
-##### Wizard 
-- **Steps Unlocked**: Details, Outcomes, Assessment, Confirmation
-- **Steps Locked**: Logistics
+CIRTL Central still has the ability to [Approve](#approved) or [Reject](#reject) via the `Course Review` page.
 
-### Approved
-> Approved courses have had their proposals reviewed by a CIRTL Central and been accepted. The course administrators are prompted to complete the course creation process by filling out the course logistics. This includes when the course starts and ends, as well as the details of the meetings that make up the course’s instruction schedule.
+#### Rejected
+> A rejected proposal has not meet CIRTL requirements during Course Review.
 
-##### Visible To
-Approved proposals can be seen by the course administrators. The course does not appear to CIRTL Central.
+Rejected proposals can be seen by the course admins in the `My Courses > Created`.
 
-##### Location
-- **Course Admin:** My Courses > Created
+The only course of action after a course is rejected is to either contact CIRTL Central or [Delete](#deleted) the proposal.
 
-##### Transitions
-- **To >>** [Completed](#completed): After Course Admin has finished the logisitics and submitted the approved proposal.
 
-- **From <<** [Pending](#pending): CIRTL Central action from the Course Review page.
-- **From <<** [Reviewing](#reviewing): CIRTL Central action from the Course Review page.
-- **From <<** [Revision Pending](#revision-pending): CIRTL Central action from the Course Review page.
+#### Revision Pending
+> Revision Pending proposals have all the required fields present for a valid proposal along with ammendments given via feedback by CIRTL Central. 
 
-##### Wizard 
-- **Steps Unlocked**: All
+Pending courses can be seen by the course admins in `My Courses > Created`
+Pending proposals can be seen by CIRTL Central in `Course Admin > Propsed`
 
-### Rejected
-> A proposal is rejected it does not meet CIRTL requirements during Course Review. If a course is rejected, it will only appear to the administrators of the course under My Courses > Created.
+CIRTL Central will review pending proposals and set them to [Approved](#approved), [Reviewing](#reviewing) or [Rejected](#rejected)
 
-##### Visible To
-Rejected proposals can be seen by the course administrators. The course does not appear to CIRTL Central.
+#### Completed
+> Proposals are considered complete after CIRTL Central approves the proposal and course admins have included course logistics on the final step of the wizard. 
 
-##### Location
-- **Course Admin:** My Courses > Created
+Completed courses are visible to their course admins on `My courses > Created`
 
-##### Transitions
-- **To >>** [Deleted](#deleted): Course administrators action from the Course page.
-- **To >>** [Cancelled](#cancelled): Course administrators action from the Course page.
+Once a couse is complete view the course page to make it [Published](#published)
 
-- **From <<** [Pending](#pending): CIRTL Central action from the Course Review page.
-- **From <<** [Reviewing](#reviewing): CIRTL Central action from the Course Review page.
-- **From <<** [Revision Pending](#revision-pending): CIRTL Central action from the Course Review page.
+#### Published
+> Published courses are open to the CIRTL Network for viewing and are able once registration for the assoicated semester is open.
 
-### Reviewing
-> Courses that are in the reviewing state have been flagged for further edits to meet the requirements in accordance with CIRTL Central. Optionally, CIRTL Central can leave leave feedback for guidance in amending the proposal.
+Published cross-Network courses are visible to everybody on the CNC who are able to register for the given course.
 
-##### Visible To
-Reviewing proposals can be seen by their course administrators. The course does not appear to CIRTL Central.
+**See [Finding Courses](/1.0.0/courses/finding-courses) for all the ways to find courses that you may be interested in or adminsitering.**
 
-##### Location
-- **Course Admin:** My Courses > Created
+### Record States
+Record states have to do with the current accessiblity of the course within the system. These states are mostly independant of approval states with the exception of cancelled courses.
 
-##### Transitions
-- **To >>** [Revision Pending](#revision-pending): Re-submitting the course via the wizard
-- **To >>** [Approved](#approved): CIRTL Central action from the Course Review page.
-- **To >>** [Rejected](#rejected): CIRTL Central action from the Course Review page.
+#### Cancelled
+> Cancelled courses will restrict registration for members and remove it from displaying within most parts of the system. Cancellation differs from deletion in that cancelled courses can be reinstated, while deleted courses cannot.
 
-##### Wizard 
-- **Steps Unlocked**: Details, Outcomes, Assessment, Confirmation
-- **Steps Locked**: Logistics
+Cancelled courses are still visible to their course adminis in `My Courses > Created`
 
-### Revision Pending
-> Revision Pending proposals have all the required fields present for a valid proposal and have been re-submitted after amending issues given via feedback by CIRTL Central. The proposal is again awaiting action from an authority.
+Cancelled course are able to be reinstated to the previous state prior to canellation unless the course was published in which case the course will be set to [Completed](#completed)
 
-##### Visible To
-Revision Pending courses can be seen by the course administrators as well as CIRTL Central.
+#### Deleted
+> A deleted course will be no longer be visiible or interactable to the system. It is a soft-delete state that allows us to keep the course in the database in case of errors.
 
-##### Location
-- **Course Admin:** My Courses > Created
-- **CIRTL Central:** Course Admin > Proposed page
-
-##### Transitions
-- **To >>** [Reviewing](#reviewing): CIRTL Central action from the Course Review page.
-- **To >>** [Approved](#approved): CIRTL Central action from the Course Review page.
-- **To >>** [Rejected](#rejected): CIRTL Central action from the Course Review page.
-
-- **From <<** [Reviewing](#reviewing): After a Course adminstrator has resolved pending issues and re-submitted.
-
-##### Wizard 
-- **Steps Unlocked**: Details, Outcomes, Assessment, Confirmation
-- **Steps Locked**: Logistics
-
-### Completed
-> Completed proposals have been approved by an administrator and had their logistics included. At this point, the course is ready to be published.
-
-##### Visible To
-Completed courses are visible to their course adminstrators.
-
-##### Location
-- **Course Admin:** My Courses > Created
-
-##### Transitions
-- **To >>** [Published](#published): Course administrator action from the Course page.
-
-- **From <<** [Approved](#approved): CIRTL Central from the Course review.
-
-##### Wizard 
-- **Steps Unlocked**: All
-
-### Published
-> Published courses are open to the CIRTL Network for registration. They can be viewed by the general CIRTL Network. They can have all of their data edited in the course editor by course administrators or CIRTL Central.
-
-##### Visible To
-Published courses are visible to everybody on the CNC, with a few exceptions.
-
-##### Location
-- `Upcoming Courses` >> <small>Published courses for any future semester</small>
-
-- `My Courses > Created` >> <small>Any Course Administrator</small>
-
-- `My Courses > Attending` >> <small>Any Registered Member</small>
-
-- `Course Archive` >> <small>Courses past their end date.</small> 
-
-- `Course Admin > Current` >> <small>CIRTL Central for any published course in the current semester*.</small> 
-
-- `Course Admin > Upcoming` >> <small>CIRTL Central for any published course in future semesters*.</small>
-
-<small>_*Semesters are determined by time ranges set by CIRTL Central in `Course Admin > Semester Deadline`_</small>
-
-
-
-##### Transitions
-- **To >>** [Cancelled](#cancelled): Course administrators or CIRTL Central via the Course page.
-- **To >>** [Deleted](#deleted): Course administrators or CIRTL Central via the Course page.
-
-- **From <<** [Completed](#completed): Course administrators action from the Course page.
-
-##### Wizard 
-- **Steps Unlocked**: All
-
-### Cancelled
-> Cancelled courses will restrict registration for members and remove it from displaying within most of the system. Cancellation differs from deletion in that cancelled courses can be reinstated, while deleted courses cannot.
-
-##### Visible To
-Cancelled courses are visible to their course administrators.
-
-##### Location
-- **Course Admin:** `My Courses > Created`
-
-##### Transitions
-Cancelled course are able to be reinstated to the previous state before being cancelled with the exception that a cancelled course that was published will be set to completed instead.
-
-### Deleted
-> A deleted course will effectively remove the course entirely from the system. This is called a soft-delete state that allows us to keep the course in the database in case of error or tracking purposes. It will not appear anywhere within the application and only exists for our record.
-
-##### Visible To
-Deleted courses are not visible to anyone 
-
-##### Location
-Deleted courses do not appear anywhere within the application
-
-##### Transitions
-Deleted courses can not be transitioned from
-
-### Appendix
-
-#### Figure 1
-Approval States Diagram
-
-![Cross Network Approval States](references/courses/CrossNetworkApproval.png)
-
-#### Figure 2
-Record States Diagram
-
-![Cross Network Record States](references/courses/CrossNetworkRecord.png)
+Deleted courses are not visible to anyone, can not get interacted with and only exsist as an archived database record.

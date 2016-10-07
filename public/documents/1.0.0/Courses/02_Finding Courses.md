@@ -3,12 +3,6 @@ If you are member wanting to browse the potential courses that are hosted in the
 
 Once you have reached the 'Courses' section, there are a few places to begin looking for the course you want.
 
-- **[Upcoming Courses](#upcoming-courses)** 
-- **[My Courses](#my-courses)**
-  - **[Created](#created)**
-  - **[Attending](#attending)**
-- **[Course Archive](#course-archive)**
-
 ## Upcoming Courses
 > Upcoming courses is where any member can go to view published courses that will be active in any future semester.
 

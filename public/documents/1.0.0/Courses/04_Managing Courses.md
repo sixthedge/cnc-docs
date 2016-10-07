@@ -4,14 +4,6 @@
 CIRTL Central will see cross-Network proposals and courses while Institution leaders will see any local courses and proposals. It is important to understand the [Approval Process](creating_courses.html#approval-process) while in the 'Course Admin' section as this will determine where the proposals and courses will appear.
 
 
-There are 5 different pages for managing course and their proposals:
-
-- [Current](#current)
-- [Upcoming](#upcoming)
-- [Proposed](#proposed)
-- [Proposal Review](#proposal-review)
-- [Semester Deadline](#semester-deadline)
-
 ## Current
 The current tab will show you all published courses that are part of the current running semeser.
 

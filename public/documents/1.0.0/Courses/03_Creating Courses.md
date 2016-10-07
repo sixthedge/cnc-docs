@@ -33,17 +33,6 @@ Not every field needs to be filled out to submit the proposal. Only the fields t
 
 At the bottom of every step are buttons to navigate throughout the form for going to the next step, previous step, or to save and exit. If the proposal has yet to be sumbitted, it will also contain a button for deleting the proposal.
 
-Cross Network Wizard Steps
-
-- [1. Course Details](#1-course-details)
-  - [1A. Course Helpers](#1a-course-helpers)
-  - [1B. Course Details](#1b-course-details)
-  - [1C. Students](#1c-students)
-  - [1D. Instructors](#1d-instructors)
-- [2. Learning Outcomes](#2-learning-outcomes)
-- [3. Assessments](#3-assessments)
-- [4. Logistics](#4-logitistics)
-- [5. Confirmation](#5-confirmation)
 
 ### 1. Course Details
 Course details contains most of the information about the course.

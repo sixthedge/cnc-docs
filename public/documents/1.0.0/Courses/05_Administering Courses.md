@@ -15,11 +15,6 @@ Editing course detail information can be achieved by the 'Edit' button in the su
 
 When a student registers for the course, they can be set to 'Approved' or more likely 'Pending'. This means that you will have to manually approve members for the course.
 
-There are 3 lists on the members page that display all of the members associted with this course:
-
-- [Approved Members](#approved-members)
-- [Pending Members](#pending-members)
-- [Rejected Members](#rejected-members)
 
 ### Approved Members
 Approved members have been accepted into the course. From this list, you may drop the member from the course.
