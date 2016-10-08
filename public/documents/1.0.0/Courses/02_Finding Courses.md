@@ -11,7 +11,7 @@ All courses in this list are published courses belonging to semesters that are i
 There are a few notes about what courses a member will be able to see in the upcoming list:
 
 - All cross-Network courses will be displayed.
-- Only local courses that are a hosted by an insitutions the member belongs to will be displayed.
+- Only local courses that are a hosted by an institutions the member belongs to will be displayed.
 
 ## My Courses
 > My Courses is the section where any member can see the courses that they are an administrator or instructor of, as well as any course that they are currently registered for.
@@ -30,16 +30,16 @@ Courses and proposals have been categorized into 4 separate lists based on their
   - Under CIRTL Central review
   - Require revisions by administrators
 
-- **Approved**: _Propsals that have been approved but require further instruction_
-  - Approved and need logisitcs
+- **Approved**: _Proposals that have been approved but require further instruction_
+  - Approved and need logistics
   - Completed and need to be published
 
 - **Published**: _Courses that are currently active_
   - Completed **AND** published
 
-- **Rejected/Cancelled**: _Proposals or courses that have been made inactive_
+- **Rejected/Canceled**: _Proposals or courses that have been made inactive_
   - Rejected by CIRTL Central
-  - Cancelled by administrators or CIRTL Central
+  - Canceled by administrators or CIRTL Central
 
 ### Attending
 The attending section is where any member can see courses that they are actively registered user for or are administering.
@@ -48,7 +48,7 @@ The attending section is where any member can see courses that they are actively
 ## Course Archive
 > Course Archive is where you can find courses that have been published and are now past their end date, as well as currently running courses.
 
-Like the upcoming page, the archive page lists only published courses. There are two lists on this page, currently active and past. Currently active courses appear here as to not clutter the upcoming page for those looking for courses to particpate in. Past courses are also listed to allow members to retrieve any information about courses that they may have particpated in or want to know more about that have already ended.
+Like the upcoming page, the archive page lists only published courses. There are two lists on this page, currently active and past. Currently active courses appear here as to not clutter the upcoming page for those looking for courses to participate in. Past courses are also listed to allow members to retrieve any information about courses that they may have participated in or want to know more about that have already ended.
 
 
 
