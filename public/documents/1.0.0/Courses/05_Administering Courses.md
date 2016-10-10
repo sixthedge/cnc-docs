@@ -15,11 +15,6 @@ Editing course detail information can be achieved by the 'Edit' button in the su
 
 When a student registers for the course, they can be set to 'Approved' or more likely 'Pending'. This means that you will have to manually approve members for the course.
 
-There are 3 lists on the members page that display all of the members associted with this course:
-
-- [Approved Members](#approved-members)
-- [Pending Members](#pending-members)
-- [Rejected Members](#rejected-members)
 
 ### Approved Members
 Approved members have been accepted into the course. From this list, you may drop the member from the course.
@@ -30,9 +25,9 @@ Pending members have requested to join the course but require approval from a co
 ### Rejected Members
 Rejected members have been removed from the course roster. Instead of simply removing the member from the roster, they are put in this state so they are aware they have been rejected and can not re-request to be on the roster.
 
-## Cancelling or Deleting Courses
+## Canceling or Deleting Courses
 > If you wish to cancel or delete your course, this is done in the 'Administrator Panel' on the 'Course' page.
 
-Cancelling a course will end the course, closing registration and hiding it from most places within the system. Cancelling is not a permanent action and any course or proposal can be reinstated.
+Canceling a course will end the course, closing registration and hiding it from most places within the system. Canceling is not a permanent action and any course or proposal can be reinstated.
 
 Deleting a course will permanently remove it from the system. Once you delete the course, you will no longer be able to access the records from it.
