@@ -1,13 +1,9 @@
 # Finding Courses in the CIRTL Network
-If you are member wanting to browse the potential courses that are hosted in the CIRTL Network, or to find courses you are already involved in, begin by selecting the 'Courses' in the main navigation menu.
+If you are interested in browsing what courses are available see [Upcoming Courses](#upcoming-courses).
 
-Once you have reached the 'Courses' section, there are a few places to begin looking for the course you want.
+If you want to see courses you are associated with (attending or administirng) see [My Courses](#my-courses).
 
-- **[Upcoming Courses](#upcoming-courses)** 
-- **[My Courses](#my-courses)**
-  - **[Created](#created)**
-  - **[Attending](#attending)**
-- **[Course Archive](#course-archive)**
+If you are interested in courses that have past see [Course Archive](#course-archive)
 
 ## Upcoming Courses
 > Upcoming courses is where any member can go to view published courses that will be active in any future semester.
