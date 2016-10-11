@@ -31,12 +31,12 @@ Courses and proposals have been categorized into 4 separate lists based on their
 
 - **Drafts**: _Proposals undergoing the approval process_
   - **__Draft has not been submitted__**: Proposal form has not been completed or submitted for review.
-  - **__Waiting for CIRTL review.__**: Proposal has been submitted and is pending review.
-  - **__Waiting for you to make revisions.__**: Proposal has been reviewed and requires some revisions.
+  - **__Waiting for CIRTL review__**: Proposal has been submitted and is pending review.
+  - **__Waiting for you to make revisions__**: Proposal has been reviewed and requires some revisions.
 
 - **Approved**: _Proposals that have been approved but require further instruction_
-  - **__Set your logistics to complete proposal.__**: Proposal has review and approved, now the proposal needs logistics to be finalized.
-  - **__Waiting to be published.__**: Proposal has fully completed and is ready to be published.
+  - **__Set your logistics to complete proposal__**: Proposal has review and approved, now the proposal needs logistics to be finalized.
+  - **__Waiting to be published__**: Proposal has fully completed and is ready to be published.
 
 - **Published**: _Courses that are currently active_
   - **__Total Students__**: Number of students approved, pending or rejected on the roster.
@@ -44,8 +44,8 @@ Courses and proposals have been categorized into 4 separate lists based on their
   - **__Registration State__**: Displays if registration is open or when it will open, as well as if registration has concluded.
 
 - **Rejected/Canceled**: _Proposals or courses that have been made inactive_
-  - **__Proposal has been rejected.__**: Course has been reviewed and rejected, invalidating the proposal.
-  - **__Proposal has been cancelled.__**: The course or proposal has been cancelled and is inactive.
+  - **__Proposal has been rejected__**: Course has been reviewed and rejected, invalidating the proposal.
+  - **__Proposal has been cancelled__**: The course or proposal has been cancelled and is inactive.
 
 ### Attending
 The attending section is where any member can see courses in which they are on the roster for.

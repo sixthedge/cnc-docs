@@ -7,7 +7,7 @@ To begin the creation process, first find the panel on either Upcoming Courses o
 ## Approval Process
 The approval process is the system that allows for members to generate proposals for courses they want hosted through the CIRTL Network. For any cross-Network course, CIRTL Central will be reviewing the proposals, and for local courses, Institution leaders will be reviewing. 
 
-<small>_*See [Course States](views/courses/references/course_states.html) for a detail listing of each state._</small>
+<small>_*See [Course States](/1.0.0/references/course-states) for a detail listing of each state._</small>
 
 When you start the wizard, your proposal is automatically created as a draft. This is gives you the ability to revisit the proposal if you do not have all of the information available at that time. 
 
@@ -29,27 +29,16 @@ The course wizard is the tool you will use as you work through your proposal. Yo
 
 The wizard separates the proposal process into steps that can be saved as you go. When you enter the wizard, the steps will be displayed at the top and can be clicked to navigate around the wizard. Some steps may be locked based on the state of the proposal.
 
-Not every field needs to be filled out to submit the proposal. Only the fields that require validation are needed for the submission. You can proceed to any step even without having the validated fields completed. Fields that require validation will display text if it does not match, as well as the confirmation page will list how many and what fields are missing.
+Not every field will need to be filled out to submit the proposal. Only the fields that require validation are needed for the submission, which will display error text if the validations are not met. You can proceed to any step even without having the validated fields completed in case you do not have the information at that time.
 
-At the bottom of every step are buttons to navigate throughout the form for going to the next step, previous step, or to save and exit. If the proposal has yet to be submitted, it will also contain a button for deleting the proposal.
+At the bottom of every step or in the header are action to navigate throughout the form as well. If the proposal has yet to be submitted, it will also contain a button for deleting the proposal.
 
+**Information within these steps may vary depending on if the course you are proposing is a cross-Network or local.**
 
 ### 1. Course Details
-Course details contains most of the information about the course.
+Course details contains the basic information about the course.
 
 The 'Course Details' step is split into 4 sub-steps that can be saved individually. The first sub-step is expanded when you start the draft, but any step can be expanded by clicking on them. If the sub-step is 'In-Progress', it does not contain all of the required fields to be considered complete.
-
-#### 1A. Course Helpers
-Course helpers sub-step allows you to select members from within the CIRTL Central Community system to assist in the course in the capacity of a 'Course Admin'. The member who initiates the proposal is automatically added as the 'Course Author'.
-
-#### 1B. Course Details
-Course Details sub-step contains the name of the course (or predefined by the selected CIRTL Core program), as well as information about the semester, level, credits and technologies.
-
-#### 1C. Students
-Students sub-step is information pertaining to student interactions with the course. The target audience, prerequisites, engagement level, and topics can help determine who may interested in attending this course. The max enrollment is also set here, which will set the capacity of the roster for members to sign up.
-
-#### 1D. Instructors
-Instructors sub-step allows you to select instructors for the course from members within the CIRTL Network Community system. It also contains relevant information about the instructors involved such as overloading, qualification, and approval from leaders of that institution. You may also select other institutions if the course is a collaboration.
 
 ### 2. Learning Outcomes
 The learning outcomes step contains the potential learning outcomes that your course is looking to target. Depending on what level you selected on Course Details step, it may have already expanded the corresponding list, but it is possible to add any learning outcome.

@@ -2,12 +2,12 @@
 
 > Administering courses in the CIRTL Network can be done by any member who is either an instructor, author, or administrator for a course.
 
-Once your course has completed the [Approval Process](creating_courses.html#approval-process) and has been published, you may wish to edit the course or maintain the registration of the course. All of the administrative actions can be taken on the 'Course' page, which can be found a number of ways.
+Once your course has completed the [Approval Process](/1.0.0/courses/creating-courses#approval-process) and has been published, you may wish to edit the course or maintain the registration of the course. All of the administrative actions can be taken on the 'Course' page, which can be found a number of ways.
 
-<small>_*See [Finding Courses](finding_courses.html) for more detailed information about where to go to find relevant courses._</small>
+<small>_*See [Finding Courses](/1.0.0/courses/finding-courses) for more detailed information about where to go to find relevant courses._</small>
 
 ## Editing Courses
-Editing course detail information can be achieved by the 'Edit' button in the sub-header of the 'Course' page. This will bring you to the [Course Wizard](creating_courses.html#course-wizard) where you can edit details in each step.
+Editing course detail information can be achieved by the 'Edit' button in the sub-header of the 'Course' page. This will bring you to the [Course Wizard](/1.0.0/courses/creating-courses#course-wizard) where you can edit details in each step.
 
 ## Managing the Roster
 > Managing the course roster is completed through the 'Members' tab on the 'Course' page.
