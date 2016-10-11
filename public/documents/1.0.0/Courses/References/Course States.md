@@ -5,7 +5,7 @@
 [comment]: # (Approval State Template)
 [comment]: # (- Who can see the course in this state?)
 [comment]: # (- Where is this course displayed while in this state?)
-[comment]: # (- What Transistions can a course in this state make?))
+[comment]: # (- What Transitions can a course in this state make?))
 
 ### Approval States
 Approval states are associated with the approval process for courses, going from a drafted proposal all the way to a published course within the system.
@@ -20,18 +20,18 @@ Once the proposal is ready to be submitted it will be set to [Pending](#pending)
 > Pending proposals have all the required fields present and valid and are are awaiting action from CIRTL Central.
 
 Pending courses can be seen by the course admins in `My Courses > Created`
-Pending proposals can be seen by CIRTL Central in `Course Admin > Propsed`
+Pending proposals can be seen by CIRTL Central in `Course Admin > Proposed`
 
 CIRTL Central will review pending proposals and set them to [Approved](#approved), [Reviewing](#reviewing) or [Rejected](#rejected)
 
 #### Approved
-> Approved propasals have been reviewed and accepted by CIRTL Central and are ready to be completed by the course admins so the course can be published.
+> Approved proposals have been reviewed and accepted by CIRTL Central and are ready to be completed by the course admins so the course can be published.
 
-Approved proposals can be seen by the course administrators in the 'My Courses > Created' section. When a course proposal is approved the 'Logisitics' step is unlocked in the creation/edit wizard. This step is where you will set the start and end times of the course and meetings. Upon submitting your logisitics the course will become [Completed](#completed).
+Approved proposals can be seen by the course administrators in the 'My Courses > Created' section. When a course proposal is approved the logistics step is unlocked in the creation/edit wizard. This step is where you will set the start and end times of the course and meetings. Upon submitting your logistics the course will become [Completed](#completed).
 
 
 #### Reviewing
-> Proposals in the reviewing state have been flagged for adjustments in accordance with CIRTL Central requirements. Optionally, CIRTL Central can leave feedback for guidance in ammending the proposal.
+> Proposals in the reviewing state have been flagged for adjustments in accordance with CIRTL Central requirements. Optionally, CIRTL Central can leave feedback for guidance in amending the proposal.
 
 Reviewing proposals can be seen by their course admins in `My Courses > Created`
 
@@ -48,7 +48,7 @@ The only course of action after a course is rejected is to either contact CIRTL 
 
 
 #### Revision Pending
-> Revision Pending proposals have all the required fields present for a valid proposal along with ammendments given via feedback by CIRTL Central. 
+> Revision Pending proposals have all the required fields present for a valid proposal along with amendments given via feedback by CIRTL Central. 
 
 Pending courses can be seen by the course admins in `My Courses > Created`
 Pending proposals can be seen by CIRTL Central in `Course Admin > Propsed`
@@ -60,26 +60,26 @@ CIRTL Central will review pending proposals and set them to [Approved](#approved
 
 Completed courses are visible to their course admins on `My courses > Created`
 
-Once a couse is complete view the course page to make it [Published](#published)
+Once a course is complete view the course page to make it [Published](#published)
 
 #### Published
-> Published courses are open to the CIRTL Network for viewing and are able once registration for the assoicated semester is open.
+> Published courses are open to the CIRTL Network for viewing and are able once registration for the associated semester is open.
 
 Published cross-Network courses are visible to everybody on the CNC who are able to register for the given course.
 
-**See [Finding Courses](/1.0.0/courses/finding-courses) for all the ways to find courses that you may be interested in or adminsitering.**
+**See [Finding Courses](/1.0.0/courses/finding-courses) for all the ways to find courses that you may be interested in or administering.**
 
 ### Record States
-Record states have to do with the current accessiblity of the course within the system. These states are mostly independant of approval states with the exception of cancelled courses.
+Record states have to do with the current accessibility of the course within the system. These states are mostly independent of approval states with the exception of cancelled courses.
 
 #### Cancelled
 > Cancelled courses will restrict registration for members and remove it from displaying within most parts of the system. Cancellation differs from deletion in that cancelled courses can be reinstated, while deleted courses cannot.
 
-Cancelled courses are still visible to their course adminis in `My Courses > Created`
+Cancelled courses are still visible to their course admins in `My Courses > Created`
 
-Cancelled course are able to be reinstated to the previous state prior to canellation unless the course was published in which case the course will be set to [Completed](#completed)
+Cancelled course are able to be reinstated to the previous state prior to cancellation unless the course was published in which case the course will be set to [Completed](#completed)
 
 #### Deleted
-> A deleted course will be no longer be visiible or interactable to the system. It is a soft-delete state that allows us to keep the course in the database in case of errors.
+> A deleted course will be no longer be visible or interact-able to the system. It is a soft-delete state that allows us to keep the course in the database in case of errors.
 
-Deleted courses are not visible to anyone, can not get interacted with and only exsist as an archived database record.
+Deleted courses are not visible to anyone, can not get interacted with and only exist as an archived database record.
