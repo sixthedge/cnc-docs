@@ -1,13 +1,13 @@
 GIT
-  remote: https://github.com/rootwizzy/totem-lodestar
-  revision: 9f003ebc355406904774d54d227af4b6af43a77c
+  remote: https://github.com/sixthedge/totem-lodestar
+  revision: c617bb592f3f5c7b6d911b3c3f4513d62d7e0a37
   specs:
-    totem-lodestar (0.3.0)
+    totem-lodestar (0.3.3)
       coderay
       config
       foundation-rails
       friendly_id
-      nokogiri (= 1.6.8)
+      nokogiri
       pg (~> 0.18)
       rails (~> 5.0.0)
       redcarpet
